@@ -16,6 +16,11 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 img {
   display: block;
   width: 100%;
@@ -26,7 +31,7 @@ section {
   flex-direction: column;
 }
 
-div:nth-child(2), div:last-child {
+.photo:nth-child(2), .photo:last-child {
   display: none;
 }
 
@@ -37,17 +42,17 @@ div:nth-child(2), div:last-child {
     flex-wrap: wrap;
   }
 
-  div:nth-child(2), div:last-child {
+  .photo:nth-child(2), .photo:last-child {
     display: block;
     width: 50%;
     flex-direction: row;
   }
 
-  div:first-child {
+  .photo:first-child {
     width: 100%;
   }
 
-  div:nth-child(3), div:nth-child(4) {
+  .photo:nth-child(3), .photo:nth-child(4) {
     width: 50%;
     flex-direction: row;
   }
@@ -56,11 +61,11 @@ div:nth-child(2), div:last-child {
 
 @media only screen and (min-width: 38em) {
 
-  div:last-child {
+  .photo:last-child {
     display: none;
   }
 
-  div:nth-child(2), div:nth-child(3), div:nth-child(4) {
+  .photo:nth-child(2), .photo:nth-child(3), .photo:nth-child(4) {
     width: 33.3333%;
   }
 
@@ -68,12 +73,12 @@ div:nth-child(2), div:last-child {
 
 @media only screen and (min-width: 60em) {
 
-  div:last-child {
+  .photo:last-child {
     display: block;
-    width: 33.3333%
+    width: 33.3333%;
   }
 
-  div:first-child {
+  .photo:first-child {
     width: 66.6666%;
   }
 
