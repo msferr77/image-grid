@@ -29,3 +29,52 @@ section {
 div:nth-child(2), div:last-child {
   display: none;
 }
+
+@media only screen and (min-width: 25em) {
+
+  section {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  div:nth-child(2), div:last-child {
+    display: block;
+    width: 50%;
+    flex-direction: row;
+  }
+
+  div:first-child {
+    width: 100%;
+  }
+
+  div:nth-child(3), div:nth-child(4) {
+    width: 50%;
+    flex-direction: row;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  div:last-child {
+    display: none;
+  }
+
+  div:nth-child(2), div:nth-child(3), div:nth-child(4) {
+    width: 33.3333%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  div:last-child {
+    display: block;
+    width: 33.3333%
+  }
+
+  div:first-child {
+    width: 66.6666%;
+  }
+
+}
